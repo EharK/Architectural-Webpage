@@ -1,46 +1,98 @@
 
-ul {
-    list-style-type: none;
-    margin: -10px;
-    padding: 0px;
-    background-color: rgb(34, 34, 34);
-    filter: drop-shadow(0px 0px 10px #00000057);
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Light.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+    font-weight: 200;
 }
 
-ul .flex-container {
+ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0px;
+    background-color: rgb(34, 34, 34);
+    filter: drop-shadow(0px 0px 10px #00000065);
+}
+
+.top-bar{
     display: flex;
     flex-direction: row;
     flex-flow: row;
     margin-right: 50px;
+    justify-content: space-between;
 }
 
-ul .flex-container li a {
-    font-family: sans-serif;
+.top-bar-logo {
+    margin-bottom: -10px;
+    filter: grayscale(0.4);
+}
+
+.top-bar-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    align-self: flex-start;
+}
+
+.top-bar li a {
+    font-family: "Open Sans";
     font-variant: small-caps;
+    font-size: 120%;
+    font-weight: 200;
     text-align: center;
     display: inline-block;
     padding-top: 60px; padding-bottom: 40px;
-    margin: 1px;
+    margin-left: 2px;
+    margin-bottom: -5px;
     width: 150px;
     background-color: rgb(58, 58, 58);
-    color: rgb(155, 155, 155);   
+    color: rgb(155, 155, 155);
     text-decoration: none;
     transition: 0.08s;
+    opacity: 40%;
 }
 
-.flex-container li a:hover {
+.top-bar li a:hover {
     transform: scale(1.06);
-    background-color: rgb(29, 29, 29);
-    color: rgb(175, 76, 40);
+    background-color: rgba(29, 29, 29, 0.377);
+    color: rgb(224, 95, 48);
+    opacity: 100%;
+}
+
+.phone li img {
+    display: inline-block;
+    margin-left: 2px;
+    padding-left: 10px; padding-right: 10px;
+    margin-bottom: -10px;
+    transition: 0.1s;
+    transform: scale(0.42);
+    filter: drop-shadow(0px 10px 5px #0000002a);
+}
+
+.phone li img:hover {
+    transform: scale(0.4);
+    filter: none;
 }
 
 h1 {
-    font-family: Verdana;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 300%;
 }
 
 p {
-    font-family: Verdana;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 135%;
 }
+
+
 
 body {
     background-color: rgb(180, 151, 151);
