@@ -10,12 +10,15 @@
     font-weight: 200;
 }
 
-ul {
+ul.navi {
     list-style-type: none;
-    margin: -8px;
+    margin: 0px;
     padding: 0px;
     background-color: rgb(34, 34, 34);
     filter: drop-shadow(0px 0px 10px #00000065);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .top-bar{
@@ -26,19 +29,27 @@ ul {
     justify-content: space-between;
 }
 
-.top-bar-logo {
+div.top-bar-logo {
+    transform: scale(0.8);
+    padding-top: 8px;
+    height: 100px;
     margin-bottom: -10px;
     filter: grayscale(0.4);
 }
 
-.top-bar-navigation {
+div.top-bar-logo:hover{
+    filter: brightness(1.2);
+}
+
+
+div.top-bar-navigation {
     display: flex;
     flex-direction: row;
-    flex-flow: row-reverse;
+    flex-flow: row;
     align-self: flex-start;
 }
 
-.top-bar li a {
+div.top-bar-navigation li a {
     font-family: "Open Sans";
     font-variant: small-caps;
     font-size: 120%;
@@ -63,22 +74,23 @@ ul {
     opacity: 100%;
 }
 
-.phone li img {
+div.phone li img {
     display: inline-block;
     margin-left: 2px;
     padding-left: 10px; padding-right: 10px;
     margin-bottom: -10px;
     transition: 0.1s;
-    transform: scale(0.42);
+    transform: scale(0.35);
     filter: drop-shadow(0px 10px 5px #0000002a);
 }
 
 .phone li img:hover {
-    transform: scale(0.4);
+    transform: scale(0.3);
     filter: none;
 }
 
 h1 {
+    padding: 50px;
     text-align: center;
     font-family: "Open Sans";
     font-weight: 100;
@@ -90,10 +102,26 @@ p {
     font-family: "Open Sans";
     font-weight: 100;
     font-size: 135%;
+    filter: drop-shadow(0px 0px 0.5px #000000);
 }
 
+section.top-pad {
+    align-self: center;
+    padding-top: 100px; padding-bottom: 300px;
+    padding-left: -10px; padding-right: -10px;
+    background-color: rgba(240, 248, 255, 0.404);
+}
 
+section.back-pad {
+    color: white;
+    padding-top: 100px; padding-bottom: 300px;
+}
 
 body {
-    background-color: rgb(180, 151, 151);
+    background-size: cover;
+    background-position: center;
+    background-image: url(media/img/spordihoone.jpg);
+    backdrop-filter: blur(5px) grayscale(0.5) brightness(50%);
+    margin: 0;
+    padding: 0;
 }
