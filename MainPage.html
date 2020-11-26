@@ -5,18 +5,20 @@
     <div class=top-bar>
 
         <div class=top-bar-logo>
-            <li><a href="MainPage.html"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lineage_OS_Logo.png"
-                        alt="nice logo" width="200" height="100"></a></li>
+            <li><a href="MainPage.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lineage_OS_Logo.png" alt="nice logo"
+                        width="200" height="100"></a></li>
         </div>
 
         <div class=top-bar-navigation>
             <li><a href="#meist">meist</a></li>
-            <li><a href="">galerii</a></li>
+            <li><a href="#galerii">galerii</a></li>
+            <li><a href="#email">kirjuta meile</a></li>
         </div>
 
         <div class=phone>
-            <li><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" alt="navigation menu"
-                    width="118" height="118" title="contacts"></li>
+            <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" width="118" height="118"
+                title="contacts">
         </div>
         <div class="dropdown">
             <span>Mouse over me</span>
@@ -36,7 +38,7 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <section class=back-pad>
+    <section id="tere" class=back-pad>
         <h1>Tere tulemast!</h1>
         <p>tegemist on Arhitektuurifirma kodulehega!</p>
         <p>Leht on veel aReNdUsJäRgUs.</p>
@@ -50,34 +52,39 @@
         </p>
     </section>
 
-    <div class="container">
+    <section id="galerii" class="back-pad">
+        <p>- siia tulevad pildid -</p>
+    </section>
+
+    <div id="email" class="mail-container">
         <div style="text-align:center">
-          <h2>Kontakt</h2>
-          <p>Jäta meile sõnum:</p>
+            <h2>Kontakt</h2>
+            <p>Jäta meile sõnum:</p>
         </div>
         <div class="row">
-          <div class="column">
-            <img src="/w3images/map.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <form action="/action_page.php">
-              <label for="fname">Eesnimi</label>
-              <input type="text" id="fname" name="firstname" placeholder="Sinu eesnimi...">
-              <label for="lname">Perekonnanimi</label>
-              <input type="text" id="lname" name="lastname" placeholder="Sinu perenimi..">
-              <label for="country">Riik</label>
-              <select id="country" name="country">
-                <option value="australia">Eesti</option>
-                <option value="canada">Petserimaa</option>
-                <option value="usa">USA</option>
-              </select>
-              <label for="subject">Sõnum</label>
-              <textarea id="subject" name="subject" placeholder="Kirjuta miskit.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+            <div class="column">
+                <img src="/w3images/map.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">Eesnimi</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Sinu eesnimi...">
+                    <label for="lname">Perekonnanimi</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Sinu perenimi..">
+                    <label for="country">Riik</label>
+                    <select id="country" name="country">
+                        <option value="australia">Eesti</option>
+                        <option value="canada">Petserimaa</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Sõnum</label>
+                    <textarea id="subject" name="subject" placeholder="Kirjuta miskit.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-      </div>
+    </div>
 </body>
 
 </html>
