@@ -33,7 +33,7 @@
     <section class=back-pad>
         <h1>Tere tulemast!</h1>
         <p>tegemist on Arhitektuurifirma kodulehega!</p>
-        <p>Leht on veel arendusjärgus.</p>
+        <p>Leht on veel aReNdUsJäRgUs.</p>
     </section>
 
     <section id="meist" class=top-pad>
@@ -44,6 +44,34 @@
         </p>
     </section>
 
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Kontakt</h2>
+          <p>Jäta meile sõnum:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="/w3images/map.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">Eesnimi</label>
+              <input type="text" id="fname" name="firstname" placeholder="Sinu eesnimi...">
+              <label for="lname">Perekonnanimi</label>
+              <input type="text" id="lname" name="lastname" placeholder="Sinu perenimi..">
+              <label for="country">Riik</label>
+              <select id="country" name="country">
+                <option value="australia">Eesti</option>
+                <option value="canada">Petserimaa</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Sõnum</label>
+              <textarea id="subject" name="subject" placeholder="Kirjuta miskit.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
