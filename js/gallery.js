@@ -20,7 +20,7 @@ if (galleryimages) {
 
                 let newImg = document.createElement("img");
                 newImgWindow.appendChild(newImg);
-                newImg.setAttribute("src","img/"+ setNewImgUrl)
+                newImg.setAttribute("src", `media/img/${setNewImgUrl}`)
 
             }
 
