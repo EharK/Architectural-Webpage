@@ -187,27 +187,45 @@ body {
   }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .column, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  div.gallery {
+    margin: 20px;
+    border: 0px solid #ccc;
+    float: left;
+    width: 200px;
   }
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+  div.gallery:hover {
+    border: 1px solid #777;
   }
   
-  .dropdown:hover .dropdown-content {
+  div.gallery img {
+    width: 150%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  #content {
     display: block;
+  }
+  input[type="text"]{
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+      padding: 6px 12px;
+      width: 150px;
+      cursor: pointer;
+  }
+  input[type="text"]:focus{
+      outline: none;
+  }
+  input:focus + div#content {
+    display: none;
   }
