@@ -118,29 +118,32 @@ p {
     filter: drop-shadow(0px 0px 0.5px #000000);
 }
 
-#tere {
-    backdrop-filter: brightness(60%) grayscale(50%);
-}
-
 section.top-pad {
+    transform: scale(0.95);
     padding-top: 100px; padding-bottom: 300px;
     padding-left: -10px; padding-right: -10px;
-    background-color: rgba(192, 206, 218, 0.8);
+    background-color: rgba(149, 158, 167, 0.8);
 }
 
 section.back-pad {
     color: white;
     padding-top: 100px; padding-bottom: 300px;
-    backdrop-filter: brightness(25%);
 }
 
 body {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(media/img/spordihoone.jpg);
     background-repeat: repeat;
     margin: 0;
     padding: 0;
+    backdrop-filter: brightness(50%) grayscale(50%);
+    background-image: url(media/img/spordihoone.jpg);
+}
+
+body.kontakt {
+    background-position: center;
+    backdrop-filter: brightness(50%);
+    background-image: url(media/img/contactback.JPG);
 }
   
   /* Style inputs */
@@ -167,8 +170,9 @@ body {
   
   /* kontakti style osa */
   .mail-container {
+    transform: scale(0.95);
     border-radius: 5px;
-    background-color: #f2f2f2ef;
+    background-color: #f2f2f2cb;
     padding: 10px;
     padding-bottom: 100px;
   }
@@ -195,7 +199,7 @@ body {
       margin-top: 0;
     }
   }
-#index-gallery{
+#index-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -207,7 +211,6 @@ body {
     "img5 img6 img7 img8";
     padding-bottom: 150px;
     color: #ccc;
-
 }
 
 
