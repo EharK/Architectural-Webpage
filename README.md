@@ -6,9 +6,9 @@ contacts tab contains a section for sending an email from the webpage itself and
 
 Regards
 
-Ehar Kala - HTML/CSS
-Kristjan Paavel - HTML/CSS
-Henri Tein - CSS/JAVASCRIPT
+Ehar Kala - HTML/CSS, 
+Kristjan Paavel - HTML/CSS, 
+Henri Tein - CSS/JAVASCRIPT, 
 
 Tartu Ülikooli Informaatika
 2020
