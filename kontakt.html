@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<ul class=navi>
+    <div class=top-bar>
+
+        <div class=top-bar-logo>
+            <li><a href="MainPage.html"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lineage_OS_Logo.png" alt="nice logo"
+                        width="200" height="100"></a></li>
+        </div>
+
+        <div class=top-bar-navigation>
+            <li><a href="MainPage.html">meist</a></li>
+            <li><a href="gale.html">galerii</a></li>
+            <li><a href="kontaktid.html">kirjuta meile</a></li>
+        </div>
+
+        <div class=phone>
+            <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" width="118" height="118"
+                title="contacts">
+        </div>
+    </div>
+</ul>
+
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>COMPACT/kontaktid</title>
+    </head>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <div id="email" class="mail-container">
+        <div style="text-align:center">
+            <h2>Kontakt</h2>
+            <p>Jäta meile sõnum:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/w3images/map.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">Eesnimi</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Sinu eesnimi...">
+                    <label for="lname">Perekonnanimi</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Sinu perenimi..">
+                    <label for="country">Riik</label>
+                    <select id="country" name="country">
+                        <option value="eesti">Eesti</option>
+                        <option value="petserimaa">Petserimaa</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Sõnum</label>
+                    <textarea id="subject" name="subject" placeholder="Kirjuta miskit.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Saada">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
