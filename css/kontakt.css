@@ -1,0 +1,74 @@
+body {
+    background-position: center;
+    backdrop-filter: brightness(50%);
+    background-image: url(../media/img/contactback.jpg);
+}
+  
+#c-info {
+    padding-right: 10vw;
+    margin-top: 0px;
+}
+
+h1 {
+    padding: 0px;
+}
+
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .duubel-container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /* kontakti style osa */
+  .mail-container {
+    transform: scale(0.95);
+    border-radius: 5px;
+    background-color: #f2f2f2cb;
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+
+
+  /* read, mis hõljuvad teineteise kohal */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
