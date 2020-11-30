@@ -8,7 +8,7 @@ Regards
 
 Ehar Kala - HTML/CSS, 
 Kristjan Paavel - HTML/CSS, 
-Henri Tein - CSS/JAVASCRIPT, 
+Henri Tein - CSS/JAVASCRIPT
 
 Tartu Ülikooli Informaatika
 2020
