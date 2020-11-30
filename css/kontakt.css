@@ -1,7 +1,7 @@
-body.kontakt {
+body {
     background-position: center;
     backdrop-filter: brightness(50%);
-    background-image: url(../media/img/contactback.JPG);
+    background-image: url(../media/img/contactback.jpg);
 }
   
 #c-info {
