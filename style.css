@@ -292,7 +292,7 @@ body.kontakt {
 
 .img-window  {
     width:100vw;
-    height: 100vh;
+    height: 123vh;
     background-color:rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
@@ -306,5 +306,5 @@ body.kontakt {
 }
 .img-window img {
     max-width: 80vw;
-    max-height: 80vwh
+    max-height: 80vh
 }
